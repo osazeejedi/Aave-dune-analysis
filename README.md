@@ -23,3 +23,8 @@ Number of wallets borrowing and lending:
 1.Aave v2 on Etheruem daily user activity
 2. Total Unique borrowers
 3. Total Unique depositors
+
+`SELECT  
+SUM(BORROWED_USD) AS AAVE_V2_Total_Borrow
+FROM ethereum.aave.ez_borrows
+  WHERE AAVE_VERSION = 'Aave V2'`
